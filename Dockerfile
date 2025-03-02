@@ -127,7 +127,5 @@ ENV NVIDIA_VISIBLE_DEVICES=all
 ENV OLLAMA_HOST=0.0.0.0:11434
 EXPOSE 11434
 
-RUN ulimit -l unlimited
-
 ENTRYPOINT ["/bin/ollama"]
 CMD ["serve"]
